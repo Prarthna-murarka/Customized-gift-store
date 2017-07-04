@@ -1,0 +1,207 @@
+<html>
+<head>
+<script>
+
+function ab()
+{
+
+
+var name=document.getElementById("name").value;
+document.getElementById("mail").innerHTML+="NAME-"+name+"<br>";
+var no=document.getElementById("no").value;
+document.getElementById("mail").innerHTML+="CONTACT NO-"+no+"<br>";
+var m=document.getElementById("e").value;
+document.getElementById("mail").innerHTML+="EMAIL-"+m+"<br>";
+var msg=document.getElementById("msg").value;
+document.getElementById("mail").innerHTML+="MESSAGE-"msg+"<br>";
+
+
+
+
+}
+
+
+
+
+
+
+</script>
+<style>
+#titletextd
+{height:20%;
+width:100%;
+left:0%;
+top:0%;
+font-size:700%;
+text-align:center;
+font-family:forte;
+ text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+
+}
+
+#marqueel
+{height:200%;
+width:35%;
+left:0%;
+top:0%;
+position:absolute;
+}
+
+#marqueer
+{height:200%;
+width:35%;
+left:80%;
+top:0%;
+position:absolute;
+}
+
+
+#titled
+{height:100%;
+width:100%;
+left:0%;
+top:20%;
+background-color:black;
+position:fixed;
+}
+
+#d1
+{height:100%;
+width:20%;
+left:0%;
+top:0%;
+background-color:pink;
+position:absolute;
+opacity:0.8;
+}
+
+#d11
+{height:20%;
+width:20%;
+left:0%;
+top:5%;
+
+position:absolute;
+opacity:1;
+}
+
+#d12
+{height:70%;
+width:50%;
+left:40%;
+top:30%;
+background-color:yellow;
+position:fixed;
+opacity:1;
+border-radius:20%;
+}
+
+#a
+{
+height:10%;
+width:10%;
+left:28%;
+top:30%;
+background-color:yellow;
+position:absolute;
+border-radius:50%;
+}
+
+#b
+{
+height:10%;
+width:10%;
+left:28%;
+top:45%;
+background-color:red;
+position:absolute;
+border-radius:50%;
+}
+
+#c
+{
+height:10%;
+width:10%;
+left:28%;
+top:60%;
+background-color:pink;
+position:absolute;
+border-radius:50%;
+}
+
+#d
+{
+height:10%;
+width:10%;
+left:28%;
+top:75%;
+background-color:purple;
+position:absolute;
+border-radius:50%;
+}
+
+
+</style>
+
+
+</head>
+ <body  bgcolor="black" >
+ 
+ <div id="titletextd"><b>
+ <center><font color="pink">  GIFTERA</font></center> </b></div>
+ <div id="titled"> <img src="contact.jpg" height="100%" width="100%" id="title">  </div>
+  <div id="marqueel"> <marquee direction="down"><img src="c4.png" height="10%" width="50%"></marquee>    </div>
+ <div id="marqueer"> <marquee direction="up"><img src="c4.png"  height="10%" width="50%"></marquee>     </div>
+ 
+ <div id="d1">  </div>
+<div id="d11">  
+<font size="6" color="red" face="forte">
+ Phone </font>
+<br>
+
+8887778668
+<br>
+<font size="6" color="red" face="forte">
+Fax
+</font>
+<br>
+(405) 285-1525
+<br>
+<font size="6" color="red" face="forte">
+Email
+General Inquiries
+</font>
+<br>
+giftera@gmail.com
+
+</div>
+<div id="d12">  
+<center>
+<BR>
+<BR>
+NAME- <input type="text" id="name" >
+<BR>
+<BR>
+CONTACT- <input type="text" id="no">
+<BR>
+<BR>
+ID- <input type="text" id="e">
+<BR>
+<BR>
+MESSAGE-
+<BR>
+<BR>
+<textarea rows="5" cols="50" id="msg">   </textarea>
+<button onclick="ab()"> SEND </button>
+
+<br>
+<span id="mail">   </span>   
+</center>
+</div>
+
+
+<div id="b"> <a href="index.html"><CENTER> <BR><FONT COLOR="YELLOW" FACE="FORTE">HOME PAGE</FONT>  </CENTER></a>        </div>
+<div id="c">  <a href="mug.html"><CENTER> <BR><FONT COLOR="YELLOW" FACE="FORTE"> GIFT MUG</FONT>  </CENTER> </a>       </div>
+<div id="d">  <a href="idea.html"><CENTER> <BR><FONT COLOR="YELLOW" FACE="FORTE"> OTHER GIFTS</FONT>  </CENTER> </a>       </div>
+  </body>
+  </html>         

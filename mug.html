@@ -1,0 +1,699 @@
+<html>
+<head>
+
+<script>
+var x,m;
+function mug1()
+{
+document.getElementById("style1b").style.visibility="visible";
+document.getElementById("style2b").style.visibility="hidden";
+document.getElementById("style3b").style.visibility="hidden";
+document.getElementById("style4b").style.visibility="hidden";
+}
+function mug2()
+{
+document.getElementById("style1b").style.visibility="hidden";
+document.getElementById("style2b").style.visibility="visible";
+document.getElementById("style3b").style.visibility="hidden";
+document.getElementById("style4b").style.visibility="hidden";
+
+
+}
+function mug3()
+{
+document.getElementById("style1b").style.visibility="hidden";
+document.getElementById("style2b").style.visibility="hidden";
+document.getElementById("style3b").style.visibility="visible";
+document.getElementById("style4b").style.visibility="hidden";
+
+}
+function mug4()
+{
+document.getElementById("style1b").style.visibility="hidden";
+document.getElementById("style2b").style.visibility="hidden";
+document.getElementById("style3b").style.visibility="hidden";
+document.getElementById("style4b").style.visibility="visible";
+
+}
+
+function dis(x)
+{
+
+document.getElementById("disi").src=x;
+}
+
+function text1()
+{
+
+var a=document.getElementById("t1").value;
+document.getElementById("dist11").innerHTML=a;
+
+}
+function text2()
+{
+var b=document.getElementById("t2").value;
+document.getElementById("dist2").innerHTML=b;
+}
+
+function colour1()
+{
+
+var c=document.getElementById("c1").value;
+document.getElementById("dist1").style.color=c;  
+}
+
+function colour2()
+{
+var d=document.getElementById("c2").value;
+document.getElementById("dist2").style.color=d;  
+}
+
+function s1()
+{
+
+var e=document.getElementById("s11").value;
+document.getElementById("dist1").style.fontSize=e;  
+}
+
+function s2()
+{
+var f=document.getElementById("s22").value;
+document.getElementById("dist2").style.fontSize=f;  
+}
+
+function clip(m)
+{
+document.getElementById("disci").src=m;
+}
+
+function disbill()
+{
+document.getElementById("bi").style.visibility="visible";
+
+}
+function hd()
+{
+document.getElementById("bi").style.visibility="hidden";
+}
+
+function bill()
+{
+document.getElementById("billd").innerHTML+= "cost of mug is=50"+"<br>";
+var name=document.getElementById("name").value;
+var num=document.getElementById("no").value;
+var id=document.getElementById("id").value;
+document.getElementById("billd").innerHTML+= "SIR/MA'AM "+name+"<br>"+" your order has been placed"
++"<br>"+"given mobile number is"+"<br>"+num+"<br>"+"given id is"+"<br>"+id;
+
+var l1=new Array();
+var l2=new Array();
+
+l1=document.getElementById("t1").value;
+ var i,j,s1=0;
+ i=l1.length;
+ for(j=0;j<=i;j++)
+ {
+ if(l1[j]==" ")
+ s1=s1+1;
+ }
+ 
+document.getElementById("billd").innerHTML+="<br>"+"number of characters in 1st line="+(i-s1);
+document.getElementById("billd").innerHTML+="<br>"+"cost of printing 1st line (rs5 per char.)="+(i-s1)*5;
+
+
+
+l2=document.getElementById("t2").value;
+ var i2,j2,s2=0;
+ i2=l2.length;
+ for(j2=0;j2<=i2;j2++)
+ {
+ if(l2[j2]==" ")
+ s2=s2+1;
+ }
+ 
+document.getElementById("billd").innerHTML+="<br>"+"number of characters in 1st line="+(i2-s2);
+document.getElementById("billd").innerHTML+="<br>"+"cost of printing 1st line (rs5 per char.)="+(i2-s2)*5;
+
+var sum;
+sum=50+parseInt((i2-s2)*5)+parseInt((i-s1)*5);
+document.getElementById("billd").innerHTML+="<br>"+"total cost="+"<br>"+sum;
+}
+
+</script>
+<style>
+#titletextd
+{height:20%;
+width:100%;
+left:0%;
+top:0%;
+position:absolute;
+font-size:700%;
+text-align:center;
+font-family:forte;
+ text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+#marqueel
+{height:20%;
+width:35%;
+left:0%;
+top:0%;
+position:absolute;
+}
+
+#marqueer
+{height:20%;
+width:30%;
+left:70%;
+top:0%;
+position:absolute;
+}
+
+
+#title
+{height:100%;
+width:100%;
+left:0%;
+top:20%;
+background-color:black;
+position:absolute;
+}
+
+#dis{height:50%;
+width:30%;
+left:37%;
+top:35%;
+background-color:white;
+position:absolute;
+box-shadow:5 5 5 white;
+border:9px dotted pink;
+  }
+  
+  
+  #billbutton{height:5%;
+width:5%;
+left:50%;
+top:115%;
+background-color:white;
+position:absolute;
+box-shadow:5 5 5 white;
+border:9px dotted pink;
+  }
+  
+#dist1{height:8%;
+width:16%;
+left:42%;
+top:52%;
+font-size:200%;
+text-align:center;
+font-family:forte;
+text-shadow:1px 1px 1px red;
+position:absolute;
+  }
+
+#dist2{height:8%;
+width:10%;
+left:46%;
+top:60%;
+
+position:absolute;
+font-size:200%;
+text-align:center;
+font-family:forte;
+text-shadow:1px 1px 1px red;
+  }  
+  
+  
+  
+  #disc{height:8%;
+width:8%;
+left:45%;
+top:70%;
+position:absolute;
+
+  }  
+  
+  #style1{height:30%;
+width:15%;
+left:2%;
+top:30%;
+
+position:absolute;
+}
+
+#style2{height:30%;
+width:15%;
+left:19%;
+top:30%;
+
+position:absolute;
+}
+#style3{height:30%;
+width:15%;
+left:2%;
+top:62%;
+
+position:absolute;
+}
+#style4{height:30%;
+width:15%;
+left:19%;
+top:62%;
+
+position:absolute;
+}
+
+
+
+#style1b{height:20%;
+width:50%;
+left:15%;
+top:93%;
+position:absolute;
+visibility:hidden;	
+}
+
+#style11{height:100%;
+width:23%;
+left:0%;
+top:0%;
+position:absolute;
+
+}
+
+#style12{height:100%;
+width:23%;
+left:25%;
+top:0%;
+position:absolute;
+	
+}
+
+#style13{height:100%;
+width:23%;
+left:50%;
+top:0%;
+position:absolute;
+	
+}
+
+#style14{height:100%;
+width:23%;
+left:75%;
+top:0%;
+position:absolute;
+
+}
+
+#style2b{height:20%;
+width:50%;
+left:15%;
+top:93%;
+position:absolute;
+visibility:hidden;	
+}
+
+#style21{height:100%;
+width:23%;
+left:0%;
+top:0%;
+position:absolute;
+
+}
+
+#style22{height:100%;
+width:23%;
+left:25%;
+top:0%;
+position:absolute;
+	
+}
+
+#style23{height:100%;
+width:23%;
+left:50%;
+top:0%;
+position:absolute;
+	
+}
+
+#style24{height:100%;
+width:23%;
+left:75%;
+top:0%;
+position:absolute;
+
+}
+
+#style3b{height:20%;
+width:50%;
+left:15%;
+top:93%;
+position:absolute;
+visibility:hidden;	
+}
+
+#style31{height:100%;
+width:23%;
+left:0%;
+top:0%;
+position:absolute;
+
+}
+
+#style32{height:100%;
+width:23%;
+left:25%;
+top:0%;
+position:absolute;
+	
+}
+
+#style33{height:100%;
+width:23%;
+left:50%;
+top:0%;
+position:absolute;
+	
+}
+
+#style34{height:100%;
+width:23%;
+left:75%;
+top:0%;
+position:absolute;
+
+}
+
+#style4b{height:20%;
+width:50%;
+left:15%;
+top:93%;
+position:absolute;
+visibility:hidden;	
+}
+
+#style41{height:100%;
+width:23%;
+left:0%;
+top:0%;
+position:absolute;
+
+}
+
+#style42{height:100%;
+width:23%;
+left:25%;
+top:0%;
+position:absolute;
+	
+}
+
+#style43{height:100%;
+width:23%;
+left:50%;
+top:0%;
+position:absolute;
+	
+}
+
+#style44{height:100%;
+width:23%;
+left:75%;
+top:0%;
+position:absolute;
+
+}
+
+#t1
+{height:10%;
+width:23%;
+left:75%;
+top:30%;
+position:absolute;
+
+}
+#w1
+{height:6%;
+width:23%;
+left:75%;
+top:25%;
+position:absolute;
+text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+#t2
+{height:10%;
+width:23%;
+left:75%;
+top:50%;
+position:absolute;
+
+}
+
+#w2
+{height:6%;
+width:23%;
+left:75%;
+top:46%;
+position:absolute;
+text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+
+}
+
+#size1
+{height:12%;
+width:23%;
+left:75%;
+top:65%;
+position:absolute;
+text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+
+}
+
+#size2
+{height:12%;
+width:23%;
+left:85%;
+top:65%;
+position:absolute;
+text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+#color1
+{height:12%;
+width:23%;
+left:75%;
+top:75%;
+position:absolute;
+text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+
+}
+
+#color2
+{height:12%;
+width:23%;
+left:85%;
+top:75%;
+position:absolute;
+text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+#clipd
+{height:40%;
+width:40%;
+left:70%;
+top:80%;
+position:absolute;
+text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+#bi
+{
+
+height:100%;
+width:60%;
+left:20%;
+top:5%;
+position:fixed;
+background-image: url("c4.png");
+visibility:hidden;
+
+}
+
+#b
+{
+height:10%;
+width:10%;
+left:32%;
+top:25%;
+background-color:red;
+position:absolute;
+border-radius:50%;
+}
+
+#c
+{
+height:10%;
+width:10%;
+left:44%;
+top:25%;
+background-color:pink;
+position:absolute;
+border-radius:50%;
+}
+
+#d
+{
+height:10%;
+width:10%;
+left:56%;
+top:25%;
+background-color:purple;
+position:absolute;
+border-radius:50%;
+}
+
+
+</style>
+
+
+</head>
+ <body bgcolor="black" >
+ <div id="marqueel"> <marquee direction="down"><img src="c4.png" height="200%" width="50%"></marquee>    </div>
+ <div id="marqueer"> <marquee direction="up"><img src="c4.png" height="200%" width="50%"></marquee>     </div>
+ 
+ <div id="titletextd"><b>
+ <center> <font color="pink"> GIFTERA</font></center></b></div>
+ <div id="titled"> <img src="title.jpg" height="100%" width="100%" id="title">  </div>
+ 
+ <div id="dis"><img src="1b.png" height="100%" width="100%" id="disi"> </div>
+ <div id="dist1"><span id="dist11">   </span> </div>
+ <span id="dist2">   </span>
+  <div id="disc"> <img src=" " height="100%" width="100%" id="disci">  </div>
+ 
+ 
+ 
+ 
+ <div id="style1">  <img src="1b.png" height="100%" width="100%"  onclick="mug1()" onmouseover="dis(this.src)">  </div>
+ <div id="style2">    <img src="2b.png" height="100%" width="100%" onclick="mug2()" onmouseover="dis(this.src)">    </div>
+ <div id="style3">  <img src="3w.jpg" height="100%" width="100%" onclick="mug3()" onmouseover="dis(this.src)">   </div>
+ <div id="style4">  <img src="4w.jpg" height="100%" width="100%" onclick="mug4()" onmouseover="dis(this.src)">   </div>
+ 
+ <div id="style1b">      
+ <div id="style11">  <img src="1b.png" height="100%" width="100%" onclick="dis(this.src)" >  </div>
+<div id="style12">  <img src="1g.png" height="100%" width="100%" onclick="dis(this.src)">  </div>
+<div id="style13">  <img src="1y.png" height="100%" width="100%" onclick="dis(this.src)">  </div>
+<div id="style14">  <img src="1r.png" height="100%" width="100%" onclick="dis(this.src)">  </div>
+ </div>
+ 
+ <div id="style2b">      
+ <div id="style21">  <img src="2b.png" height="100%" width="100%" onclick="dis(this.src)">  </div>
+<div id="style22">  <img src="2g.png" height="100%" width="100%" onclick="dis(this.src)">  </div>
+<div id="style23">  <img src="2y.png" height="100%" width="100%" onclick="dis(this.src)">  </div>
+<div id="style24">  <img src="2r.png" height="100%" width="100%" onclick="dis(this.src)">  </div>
+ </div>
+ 
+ <div id="style3b">      
+ <div id="style31">  <img src="3w.jpg" height="100%" width="100%" onclick="dis(this.src)">  </div>
+<div id="style32">  <img src="3g.jpg" height="100%" width="100%" onclick="dis(this.src)">  </div>
+<div id="style33">  <img src="3r.jpg" height="100%" width="100%" onclick="dis(this.src)">  </div>
+<div id="style34">  <img src="3y.png" height="100%" width="100%" onclick="dis(this.src)">  </div>
+ </div>
+ 
+ <div id="style4b">      
+ <div id="style41">  <img src="4w.jpg" height="100%" width="100%" onclick="dis(this.src)">  </div>
+<div id="style42">  <img src="4y.jpg" height="100%" width="100%" onclick="dis(this.src)">  </div>
+<div id="style43">  <img src="4g.jpg" height="100%" width="100%" onclick="dis(this.src)">  </div>
+<div id="style44">  <img src="4r.jpg" height="100%" width="100%" onclick="dis(this.src)">  </div>
+ </div>
+ <div id="w1"> <font color="white" size="5"> text to be printed (1st line)</font></div>
+ <div id="w2"> <font color="white" size="5">text to be printed (2nd line)</font></div>
+ <textarea rows="5" cols="10" id="t1" onblur="text1()" value=></textarea><br><br>
+ <textarea rows="5" cols="10" id="t2" onblur="text2()" value="text to be printed (2nd line"></textarea><br><br>
+ 
+ 
+ <div id="size1">
+ <font color="white">Size1:</font>
+<select id="s11" onchange="s1()">
+<option value="--select--">--select--</option>
+<option value="200%">2</option>
+<option value="400%">4</option>
+<option value="600%">6</option>
+<option value="800%">8</option>
+</select>
+
+</div>
+
+<div id="size2">
+ <font color="white">Size2:</font>
+<select id="s22" onchange="s2()">
+<option value="--select--">--select--</option>
+<option value="200%">2</option>
+<option value="400%">4</option>
+<option value="600%">6</option>
+<option value="800%">8</option>
+</select>
+</div>
+
+<div id="color1">
+<font color="white">Color1:</font>
+<select id="c1" onchange="colour1()">
+<option value="--select--">--select--</option>
+<option value="red">red</option>
+<option value="green">green</option>
+<option value="orange">orange</option>
+<option value="blue">blue</option>
+<option value="maroon">maroon</option>
+</select> </div>
+
+<div id="color2">
+<font color="white">Color2:</font>
+<select id="c2" onchange="colour2()">
+<option value="--select--">--select--</option>
+<option value="red">red</option>
+<option value="green">green</option>
+<option value="orange">orange</option>
+<option value="blue">blue</option>
+<option value="maroon">maroon</option>
+</select> </div>
+
+
+<div id="clipd">  
+<img src="c1.png" height="30%" width="30%" onclick="clip(this.src)"> 
+<img src="c2.png" height="30%" width="30%" onclick="clip(this.src)"> 
+<br>
+<img src="c3.png" height="30%" width="30%" onclick="clip(this.src)"> 
+<img src="c4.png  " height="30%" width="30%" onclick="clip(this.src)"> 
+<br>
+<img src="c5.png  " height="30%" width="30%" onclick="clip(this.src)"> 
+<img src="c6.png " height="30%" width="30%" onclick="clip(this.src)"> 
+</div>
+
+<div id="billbutton"> <button id="billbut" onclick="disbill()"> ORDER </button></div>
+
+
+<div id="bi">
+<center>
+<br><br><br><br><br><br>
+NAME- <input type="text" id="name">
+<br><br>
+CONTACT NUMBER- <input type="text" id="no">
+<br><br>
+EMAIL ID- <input type="text" id="id">
+<br><br>
+<button onclick="bill()"> BILL </button>
+<br><br>
+
+<span id="billd" >   </span>
+<br><br><br>
+<button onclick="hd()"> close </button>
+
+</center></div>
+<div id="b"> <a href="cont.html"><CENTER> <BR><FONT COLOR="YELLOW" FACE="FORTE">CONTACT</FONT>  </CENTER></a>        </div>
+<div id="c">  <a href="index.html"><CENTER> <BR><FONT COLOR="YELLOW" FACE="FORTE"> HOME</FONT>  </CENTER> </a>       </div>
+<div id="d">  <a href="idea.html"><CENTER> <BR><FONT COLOR="YELLOW" FACE="FORTE"> OTHER GIFTS</FONT>  </CENTER> </a>       </div>
+  
+
+
+  </body>
+  </html>         
